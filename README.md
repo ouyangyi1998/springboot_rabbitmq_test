@@ -1,0 +1,5 @@
+# springboot+rabbitMQ实现消息队列
+- 在springboot启动器中配置Queue，topicExchange，messageListener初始化
+- 把Queue和topicExchange封装到binding之中
+- 构造messageListenerContainer容器 把messageListener，connectionFactory封装
+- 在messageListenerAdapter通过反射实现receive中方法receiveMessage的构造
